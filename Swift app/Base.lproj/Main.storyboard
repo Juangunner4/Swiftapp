@@ -37,19 +37,54 @@
                                     <action selector="pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y36-Kt-jHG"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f2t-aj-9RX">
+                                <rect key="frame" x="137" y="204" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Hmh-Gp-mZO"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fIc-Ul-UiJ">
+                                <rect key="frame" x="138" y="275" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="RXw-5U-Oud"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c6D-Et-hct">
+                                <rect key="frame" x="137" y="204" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="iNv-Nr-ZbY"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="fIc-Ul-UiJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1xV-xm-nqM"/>
+                            <constraint firstItem="c6D-Et-hct" firstAttribute="leading" secondItem="f2t-aj-9RX" secondAttribute="leading" id="5zm-sY-HwS"/>
                             <constraint firstItem="5qo-jy-tdj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Au1-PL-xvp"/>
                             <constraint firstItem="5qo-jy-tdj" firstAttribute="top" secondItem="5WY-xO-Tmp" secondAttribute="bottom" constant="50" id="FdY-bX-d1Q"/>
+                            <constraint firstItem="f2t-aj-9RX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GmJ-w6-5FU"/>
+                            <constraint firstItem="fIc-Ul-UiJ" firstAttribute="top" secondItem="f2t-aj-9RX" secondAttribute="bottom" constant="41" id="Hpf-rk-KAO"/>
+                            <constraint firstItem="c6D-Et-hct" firstAttribute="baseline" secondItem="f2t-aj-9RX" secondAttribute="baseline" id="IuC-j1-mvx"/>
                             <constraint firstItem="5WY-xO-Tmp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="Occ-py-e0K"/>
                             <constraint firstItem="5qo-jy-tdj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OfC-fM-66d"/>
+                            <constraint firstItem="f2t-aj-9RX" firstAttribute="top" secondItem="5qo-jy-tdj" secondAttribute="bottom" constant="63" id="aIW-g1-Txz"/>
                             <constraint firstItem="5qo-jy-tdj" firstAttribute="top" secondItem="5WY-xO-Tmp" secondAttribute="bottom" constant="50" id="bnO-JB-oHK"/>
                             <constraint firstItem="5WY-xO-Tmp" firstAttribute="centerX" secondItem="5qo-jy-tdj" secondAttribute="centerX" id="szu-UA-gDE"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="coollabel" destination="5WY-xO-Tmp" id="gy6-hc-DPr"/>
+                        <outlet property="text1" destination="c6D-Et-hct" id="E6Q-w6-jeL"/>
+                        <outlet property="text2" destination="fIc-Ul-UiJ" id="1yO-4i-NhU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
